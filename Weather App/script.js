@@ -1,4 +1,4 @@
-const apiKey = "d06452c20fa92ded3ebd555b9a126612";
+const apiKey = "YOUR_API_KEY_HERE";
 weatherIcon.src="images/hello.png";
 async function getWeather() {
     const city = document.getElementById("city").value;
