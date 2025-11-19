@@ -26,7 +26,7 @@ async function getWeather() {
         const mainWeather = data.weather[0].main.toLowerCase();
 
         if (mainWeather.includes("cloud")) {
-            weatherIcon.src = "images/clouds.png";
+            weatherIcon.src = "images/cloud.png";
         } else if (mainWeather.includes("clear")) {
             weatherIcon.src = "images/sun.png";
         } else if (mainWeather.includes("rain")) {
