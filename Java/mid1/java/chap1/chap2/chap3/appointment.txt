@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+	<div class="container">
+  <header>
+    <h1>Appointment Booking</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <input id="name" placeholder="Enter your name" />
+      <input id="date" type="date" />
+      <select id="time">
+        <option value="">Select time</option>
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>12:00 PM</option>
+      </select>
+      <button id="book-btn" onclick="bookAppointment()">Book</button>
+      <div id="err-msg" class="err" aria-live="polite"></div>
+    </section>
+
+    <section id="appointments-section">
+      <h2>Booked Appointments (<span id="count">0</span>)</h2>
+      <ul id="appointments-list"></ul>
+    </section>
+  </main>
+  <div>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
